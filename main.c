@@ -5,12 +5,16 @@
 
 int main(int argc, char *argv[]){
 
-	char text;
+	int a,b;
+	float c;
 	
-	printf("input a character : ");
-	scanf("%c", &text);
+	printf("input a numerator: ");
+	scanf("%d",&a);
+	printf("input a denominator: ");
+	scanf("%d",&b);
+	c= (float)a/(float)b;
 	
-	printf("the next character of %c(%d) is %c(%d)\n",text, text, text+1, text+1);
-
+	printf("The result of division is %f\n",c);
+	
 		return 0;
 }
